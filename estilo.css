@@ -1,0 +1,131 @@
+
+:root {
+    --rojo: #e50914;
+    --azul: #1d4ed8;
+    --morado: #7c3aed;
+    --verde: #16a34a;
+    --amarillo: #f59e0b;
+    --celeste: #0284c7;
+    --fondo-caja: rgba(30, 41, 59, 0.85);
+}
+body {
+    background-image: url('imagenes/fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0f172a;
+    color: white;
+    font-family: Arial, sans-serif;
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+#cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--fondo-caja);
+    border: 2px solid var(--celeste);
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(2, 132, 199, 0.5);
+    padding: 15px;
+}
+#logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid var(--amarillo);
+}
+#titulo-img {
+    width: 300px;
+}
+.bloque {
+    background-color: var(--fondo-caja);
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+h2 {
+    color: var(--amarillo);
+    margin-bottom: 10px;
+}
+.contenedor-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.tarjeta {
+    flex: 1;
+    background-color: rgba(15, 23, 42, 0.8);
+    border: 1px solid #334155;
+    border-radius: 8px;
+    margin: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.tarjeta-cabecera {
+    padding: 8px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+#tarjeta-avengers1 .tarjeta-cabecera { background-color: var(--azul); }
+#tarjeta-infinity .tarjeta-cabecera { background-color: var(--rojo); }
+#tarjeta-endgame .tarjeta-cabecera { background-color: var(--morado); }
+
+.tarjeta-cuerpo {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.85rem;
+}
+.poster {
+    width: 170px;
+    height: 240px;
+    border-radius: 6px;
+}
+#tarjeta-avengers1 .poster {
+    border: 2px solid var(--azul);
+    box-shadow: 0px 4px 10px rgba(29, 78, 216, 0.6);
+}
+#tarjeta-infinity .poster {
+    border: 2px solid var(--rojo);
+    box-shadow: 0px 4px 10px rgba(229, 9, 20, 0.6);
+}
+#tarjeta-endgame .poster {
+    border: 2px solid var(--morado);
+    box-shadow: 0px 4px 10px rgba(124, 58, 237, 0.6);
+}
+
+#tarjeta-doomsday {
+    border: 2px solid var(--verde);
+}
+#tarjeta-doomsday .tarjeta-cabecera {
+    background-color: var(--verde);
+}
+.doomsday-cuerpo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#tarjeta-doomsday .poster {
+    border: 2px solid var(--verde);
+    box-shadow: 0px 4px 10px rgba(22, 163, 74, 0.6);
+}
+
+#imagen-central {
+    text-align: center;
+}
+#poster-central {
+    width: 350px;
+    border: 2px solid var(--rojo);
+    border-radius: 8px;
+    box-shadow: 0px 6px 15px rgba(229, 9, 20, 0.5);
+}
+
+#pie {
+    background-color: var(--fondo-caja);
+    border: 2px solid var(--amarillo);
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    }
